@@ -1,0 +1,96 @@
+/* Общие настройки для контейнера админ-панели */
+.admin-container {
+    max-width: 800px; /* Максимальная ширина */
+    margin: 50px auto; /* Авто-отступы для центрирования */
+    padding: 20px; /* Внутренние отступы */
+    background: white; /* Цвет фона */
+    border-radius: 8px; /* Закругление углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+/* Заголовки */
+h1 {
+    text-align: center; /* Выравнивание по центру */
+    color: #333; /* Цвет текста */
+}
+
+/* Стиль для групп форм */
+.form-group {
+    margin-bottom: 15px; /* Отступ между группами формы */
+}
+
+/* Метка */
+label {
+    display: block; /* Принудительное отображение как блок */
+    margin-bottom: 5px; /* Отступ под меткой */
+    color: #555; /* Цвет метки */
+}
+
+/* Входные поля */
+input, textarea {
+    width: 100%; /* Полная ширина */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Рамка по умолчанию */
+    border-radius: 4px; /* Закругление углов */
+    box-sizing: border-box; /* Учет отступов в ширине */
+    transition: border 0.3s; /* Плавный переход границы */
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #6a1b9a; /* Цвет границы при фокусе */
+}
+
+/* Настройки для текстовой области */
+textarea {
+    height: 100px; /* Фиксированная высота */
+    resize: none; /* Запрет изменения размера */
+}
+
+/* Кнопка */
+.btn {
+    background-color: #6a1b9a; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 10px; /* Внутренние отступы кнопки */
+    border: none; /* Без рамки */
+    border-radius: 4px; /* Закругление углов */
+    cursor: pointer; /* Указатель курсора */
+    transition: background 0.3s; /* Плавный переход для фона */
+    display: block; /* Кнопка на всю ширину */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+.btn:hover {
+    background-color: #9c27b0; /* Цвет кнопки при наведении */
+}
+
+/* Список недвижимости */
+#properties-list {
+    margin-top: 20px; /* Отступ сверху */
+}
+
+#property-list {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+#property-list li {
+    background: #f9f9f9; /* Цвет фона */
+    margin: 10px 0; /* Отступ между элементами списка */
+    padding: 15px; /* Внутренние отступы */
+    border-radius: 4px; /* Закругленные углы */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Тень элементов списка */
+}
+
+/* Изображения объектов недвижимости */
+#property-list img {
+    max-width: 100px; /* Ограничиваем размер изображений */
+    margin-right: 10px; /* Отступ между изображением и текстом */
+}
+
+/* Кнопка "Назад" */
+.back-button {
+    position: absolute; /* Позиционируем кнопку относительно блока .admin-container */
+    top: 20px; /* Отступ сверху */
+    left: 20px; /* Отступ слева */
+    margin: 0; /* Убираем отступы по умолчанию */
+}

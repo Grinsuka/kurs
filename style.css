@@ -1,0 +1,253 @@
+/* Основные стили для body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Фоновый цвет для всего сайта */
+    color: #333;
+}
+html {
+    scroll-behavior: smooth; /* Включаем плавную прокрутку */
+}
+/* Стили для заголовка */
+header {
+    background: url('images/header-background.jpg') no-repeat center center;
+    background-size: cover; /* Заполнение фона изображением */
+    color: #000000;
+    padding: 60px 0; /* Увеличен отступ */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Стили для навигации */
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для секций (без фонового изображения) */
+section {
+    background-color: white; /* Белый фон для секций */
+    color: black; /* Темный текст для секций */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: rgb(5, 5, 5);
+}
+
+/* Стили для подвала */
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ответственное оформление */
+#gallery {
+    padding: 20px; /* Отступы вокруг секции */
+    display: grid; /* Используем CSS Grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Настройка колонок */
+    gap: 15px; /* Промежутки между элементами */
+}
+
+h2 {
+    text-align: center; /* Центрируем текст заголовка */
+    font-size: 2em; /* Размер шрифта заголовка */
+    margin-bottom: 20px; /* Отступ снизу для отделения от картинок */
+    margin-top: 0; /* Убираем отступ сверху, если он есть */
+    color: #6a1b9a; /* Цвет заголовка */
+    grid-column: 1 / -1; /* Заставляем заголовок занимать всю ширину контейнера */
+}
+
+.gallery-item {
+    border: 1px solid #ddd; /* Граница вокруг элементов галереи */
+    border-radius: 8px; /* Сглаженные углы */
+    overflow: hidden; /* Убирает переполнение */
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавные анимации */
+}
+
+.gallery-item a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: inherit; /* Унаследовать цвет текста */
+}
+
+.gallery-item img {
+    width: 100%; /* Изображение на всю ширину блока */
+    height: auto; /* Пропорции изображения */
+    display: block; /* Убирает промежутки под изображением */
+}
+
+.gallery-item p {
+    padding: 10px; /* Отступы вокруг описания */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Увеличение элемента при наведении */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Добавление тени при наведении */
+}
+/* Стили для формы */
+#contact-form {
+    margin: 20px auto;
+    max-width: 600px; /* Максимальная ширина формы */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%; /* Ширина в 100% для соответствия родительскому элементу */
+    height: 50px; /* Установите фиксированную высоту по желанию */
+    resize: none; /* Запретить изменение размера */
+}
+/* Стили для раздела отзывов */
+#testimonials {
+    background-color: #f9f9f9; /* Легкий серый фон для раздела */
+    padding: 40px 20px; /* Отступы сверху/снизу и по бокам */
+    border-radius: 8px; /* Сглаженные углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для объема */
+}
+
+/* Стили для раздела отзывов */
+#testimonials {
+    background-color: #f3f4f6; /* Светлый серый фон для раздела */
+    padding: 40px 20px; /* Отступы сверху/снизу и по бокам */
+    border-radius: 8px; /* Сглаженные углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
+}
+
+#testimonials h2 {
+    text-align: center; /* Центрирование заголовка */
+    color: #333; /* Цвет текста заголовка */
+}
+
+.testimonial {
+    margin: 20px auto; /* Отступы между отзывами */
+    max-width: 600px; /* Максимальная ширина блока с отзывом */
+    padding: 20px; /* Отступ внутри блока */
+    background: #ffffff; /* Белый фон для каждого отзыва */
+    border-left: 5px solid #d1c4e9; /* Постельный сиреневый граница слева */
+    border-radius: 8px; /* Сглаженные углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для всего блока */
+}
+
+.testimonial blockquote {
+    margin: 0; /* Убираем отступы у блока цитаты */
+    font-style: italic; /* Курсив для цитаты */
+    color: #555; /* Цвет текста цитаты */
+    position: relative; /* Для дальнейших стилей */
+}
+
+.testimonial blockquote footer {
+    text-align: right; /* Выравнивание текста автора вправо */
+    font-weight: bold; /* Жирный шрифт для имени клиента */
+    color: #6a1b9a; /* Постельный фиолетовый для имени клиента */
+    margin-top: 10px; /* Отступ сверху */
+    background: none; /* Убираем фон */
+    display: inline; /* Вывод имени в одну строку без лишних блоков */
+}
+.contact-form {
+    max-width: 600px; /* Максимальная ширина формы */
+    margin: 0 auto; /* Центрирование формы */
+    padding: 20px; /* Внутренние отступы */
+    background-color: #f9f9f9; /* Фоновый цвет формы */
+    border: 1px solid #ccc; /* Рамка формы */
+    border-radius: 8px; /* Закругление углов */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень формы */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Отступ между группами формы */
+}
+
+label {
+    display: block; /* Отображение метки как блок */
+    margin-bottom: 5px; /* Отступ под меткой */
+    color: #333; /* Цвет метки */
+}
+
+input,
+textarea {
+    width: 100%; /* Полная ширина поля */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Рамка поля */
+    border-radius: 4px; /* Закругление углов поля */
+    box-sizing: border-box; /* Учет отступов в ширине */
+}
+
+button {
+    background-color: #6a1b9a; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 10px; /* Внутренние отступы кнопки */
+    border: none; /* Без рамки */
+    border-radius: 4px; /* Закругление углов кнопки */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background 0.3s; /* Плавный переход цвета кнопки */
+}
+
+button:hover {
+    background-color: #9c27b0; /* Цвет кнопки при наведении */
+}
+.thank-you-message {
+    max-width: 400px; /* Максимальная ширина окна */
+    padding: 20px; /* Внутренние отступы */
+    background-color: #f9f9f9; /* Фоновый цвет */
+    border: 1px solid #ccc; /* Рамка */
+    border-radius: 8px; /* Закругление углов */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+    margin: 20px auto; /* Центрирование */
+    text-align: center; /* Выравнивание текста по центру */
+}
+#scrollToTopBtn {
+    display: none; /* Начально скрываем кнопку */
+    position: fixed; /* Фиксируем позицию */
+    bottom: 20px; /* Расстояние от нижнего края */
+    right: 30px; /* Расстояние от правого края */
+    background-color: #9c27b0; /* Установите ваш цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    border-radius: 50%; /* Закругление, чтобы создать круг */
+    width: 50px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    display: flex; /* Используем flex для центрирования содержимого */
+    align-items: center; /* Вертикально центрируем */
+    justify-content: center; /* Горизонтально центрируем */
+    cursor: pointer; /* Указатель курсора */
+    z-index: 1000; /* Обеспечиваем видимость поверх остальных элементов */
+    transition: background-color 0.3s; /* Плавный переход для фона */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #7b1fa2; /* Цвет кнопки при наведении */
+}
