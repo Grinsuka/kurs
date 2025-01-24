@@ -1,0 +1,59 @@
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Цвет фона страницы */
+}
+
+.property-container {
+    max-width: 800px; /* Максимальная ширина контейнера */
+    margin: 20px auto; /* Центрируем контейнер на странице */
+    padding: 20px; /* Отступы вокруг контейнера */
+    background: white; /* Цвет фона контейнера */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+}
+
+h1 {
+    text-align: center; /* Центрируем заголовок */
+    color: #333; /* Цвет заголовка */
+}
+
+.property-image img {
+    width: 100%; /* Изображение на всю ширину контейнера */
+    border-radius: 8px; /* Закругленные углы изображения */
+}
+
+.property-details {
+    margin-top: 20px; /* Отступ сверху для разделения */
+}
+
+.property-details h2 {
+    color: #6a1b9a; /* Цвет заголовка для описания недвижимости */
+}
+
+.property-details ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+.property-details li {
+    margin: 10px 0; /* Отступы между элементами списка */
+}
+
+.back-button {
+    display: inline-block; /* Отображаем как блочный элемент */
+    margin-top: 20px; /* Отступ сверху */
+    padding: 10px 20px; /* Отступы по вертикали и горизонтали */
+    background: #6a1b9a; /* Фоновый цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Закругленные углы кнопки */
+    transition: background 0.3s; /* Плавный переход для цвета фона */
+}
+
+.back-button:hover {
+    background: #9c27b0; /* Цвет кнопки при наведении */
+}

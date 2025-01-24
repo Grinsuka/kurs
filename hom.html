@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Риелторская Фирма - Ваш надежный партнер в недвижимости</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключение стилей -->
+</head>
+<body>
+    <header>
+        <h1>Ваш идеальный дом ждет вас!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="admin.html">Админ-панель</a></li> <!-- Ссылка на админ-панель -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery">
+        <h2>Галерея недвижимости</h2>
+        <div class="gallery-item">
+            <a href="property1.html">
+                <img src="images/property1.jpg" alt="недвижимость 1">
+                <p>лучшая квартира</p>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="property2.html">
+                <img src="images/property2.jpg" alt="недвижимость 2">
+                <p>очень хорошая квартира</p>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="property3.html">
+                <img src="images/property3.jpg" alt="недвижимость 3">
+                <p>квартира близко к центру</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы - команда профессионалов в сфере недвижимости, готовая помочь вам найти идеальный дом или квартиру, а также успешно продать вашу недвижимость.</p>
+
+        <section id="testimonials">
+            <h2>Отзывы клиентов</h2>
+            <div class="testimonial">
+                <blockquote>
+                    <p>Отличная работа! Я очень доволен своей покупкой.</p>
+                    <footer>- Имя клиента</footer>
+                </blockquote>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    <p>Лучшие риелторы! Рекомендую всем!</p>
+                    <footer>- Имя клиента</footer>
+                </blockquote>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    <p>Работать с этой фирмой было очень приятно! Спасибо.</p>
+                    <footer>- Имя клиента</footer>
+                </blockquote>
+            </div>
+            <!-- Добавьте дополнительные отзывы по мере необходимости -->
+        </section>
+    </section>
+
+    <section id="services">
+        <h2>Наши услуги</h2>
+        <ul>
+            <li>Покупка и продажа недвижимости</li>
+            <li>Аренда жилых и коммерческих объектов</li>
+            <li>Оценка и консультации по недвижимости</li>
+            <li>Юридическая поддержка сделок</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Оставьте заявку</h2>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+    
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+        
+        <div id="thank-you-message" class="thank-you-message" style="display:none;">
+            <p>Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.</p>
+            <button onclick="closeThankYouMessage()">Закрыть</button>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Прекратить стандартное поведение формы
+    
+            // Отображение сообщения "Спасибо"
+            document.getElementById('thank-you-message').style.display = 'block';
+    
+            // Сбросить значения полей формы (при необходимости)
+            this.reset();
+        });
+    
+        function closeThankYouMessage() {
+            document.getElementById('thank-you-message').style.display = 'none'; // Скрыть сообщение
+        }
+    </script>
+    </section>
+    <section id="faq">
+        <h2>Часто задаваемые вопросы</h2>
+        <h3>Как долго займет продажа моей недвижимости?</h3>
+        <p>Время продажи недвижимости зависит от различных факторов, включая рынок, состояние вашего объекта и цену. В среднем продажа может занять от нескольких недель до нескольких месяцев. Мы предоставим прогноз времени, основанный на текущих рыночных условиях.
+            </p>
+
+        <h3>Что такое комиссия риелтора и как она рассчитывается?</h3>
+        <p>Комиссия риелтора обычно составляет процент от цены продажи недвижимости и может варьироваться в зависимости от риелтора и местного рынка. Эта комиссия покрывает услуги по маркетингу, использованию платформ и поддержке в процессе продажи.</p>
+    </section>
+
+    <section id="social-media">
+        <h2>Следите за нами в социальных сетях</h2>
+        <a href="https://vk.com">VK</a>
+        <a href="https://web.telegram.org/k/">Telegram</a>
+    </section>
+
+    <footer>
+        <p>© 2024 Риелторская Фирма. Все права защищены.</p>
+    </footer>
+    <!-- Кнопка "Наверх" -->
+<button id="scrollToTopBtn" title="Вернуться наверх">&#8679;</button>
+<script>
+    // Получаем кнопку
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Показать кнопку, когда прокрутка больше 100px
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.style.display = "block"; // Показываем кнопку
+        } else {
+            scrollToTopBtn.style.display = "none"; // Скрываем кнопку
+        }
+    };
+
+    // При нажатии колесика прокрутка плавно до верха страницы
+    scrollToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Плавная прокрутка
+        });
+    });
+</script>
+</body>
+</html>
